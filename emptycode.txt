@@ -1,0 +1,52 @@
+package uk.ac.reading.sis05kol.mooc;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+
+public class TheGame extends GameThread{
+
+    }
+
+    //This is run before a new game (also after an old game)
+    @Override
+    public void setupBeginning() {
+        
+    }
+
+    @Override
+    protected void doDraw(Canvas canvas) {
+        //If there isn't a canvas to draw on do nothing
+        //It is ok not understanding what is happening here
+        if(canvas == null) return;
+
+        super.doDraw(canvas);
+
+        //draw the image of the ball using the X and Y of the ball
+        //drawBitmap uses top left corner as reference, we use middle of picture
+        //null means that we will use the image without any extra features (called Paint)
+        
+    }
+
+    //This is run whenever the phone is touched by the user
+
+	@Override
+	protected void actionOnTouch(float x, float y) {
+		
+	}
+
+	
+
+	//This is run whenever the phone moves around its axises 
+	@Override
+	protected void actionWhenPhoneMoved(float xDirection, float yDirection, float zDirection) {
+		
+	}
+
+
+    //This is run just before the game "scenario" is printed on the screen
+    @Override
+    protected void updateGame(float secondsElapsed) {
+        
+    }
+}
